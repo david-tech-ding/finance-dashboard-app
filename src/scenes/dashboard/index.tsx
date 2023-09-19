@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Box, useMediaQuery } from "@mui/material";
-import Row2 from "./Row2";
 import Row1 from "./Row1";
+import Row2 from "./Row2";
 import Row3 from "./Row3";
 
 const gridTemplateLargeScreens = `
