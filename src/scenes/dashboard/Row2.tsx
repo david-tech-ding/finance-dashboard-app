@@ -25,7 +25,7 @@ const pieData = [
   { name: "Group B", value: 400 },
 ];
 
-const Row2 = (props: Props) => {
+const Row2 = () => {
   const { data: productData } = useGetProductsQuery();
   const { data: operationalData } = useGetKpisQuery();
   const { palette } = useTheme();
