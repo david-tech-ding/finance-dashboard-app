@@ -25,7 +25,7 @@ type Props = {};
 const Row1 = (props: Props) => {
   const { palette } = useTheme();
   const { data } = useGetKpisQuery();
-  console.log("data:", data);
+  // console.log("data:", data);
 
   const revenue = useMemo(() => {
     return (
@@ -146,7 +146,7 @@ const Row1 = (props: Props) => {
         <BoxHeader
           title="Revenue and Profit"
           subtitle="top line = revenue, bottom line = profit"
-          sideText="+4%"
+          sideText="+8%"
         />
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
@@ -205,7 +205,7 @@ const Row1 = (props: Props) => {
         <BoxHeader
           title="Revenue Month by Month"
           subtitle="graph representing the revenue month by month"
-          sideText="+4%"
+          sideText="+8%"
         />
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
