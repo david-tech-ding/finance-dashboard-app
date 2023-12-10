@@ -20,7 +20,12 @@ import {
   ZAxis,
 } from "recharts";
 
-const pieData = [
+interface PieDataItem {
+  name: string;
+  value: number;
+}
+
+const pieData: PieDataItem[] = [
   { name: "Group A", value: 600 },
   { name: "Group B", value: 400 },
 ];
