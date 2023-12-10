@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for server-finance-dashboard on 2023-12-10T18:36:08Z
+# fly.toml app configuration file generated for finance-dashboard-david on 2023-12-10T21:55:20Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "server-finance-dashboard"
+app = "finance-dashboard-david"
 primary_region = "lhr"
 
 [build]

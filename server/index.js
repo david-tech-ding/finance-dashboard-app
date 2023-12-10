@@ -12,7 +12,7 @@ import transactionRoutes from "./routes/transaction.js";
 import Product from "./models/product.js";
 import Transaction from "./models/Transaction.js";
 import KPI from "./models/KPI.js";
-import { kpis, products, transactions } from "../data/data.js";
+import { kpis, products, transactions } from "./data/data.js";
 
 /* Configs */
 dotenv.config();
@@ -32,13 +32,14 @@ app.use("/transaction", transactionRoutes);
 
 /* Mongoose Setup */
 const PORT = process.env.PORT || 3000;
+const HOST = "0.0.0.0";
 mongoose
   .connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then(async () => {
-    app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
+    app.listen(PORT, HOST, () => console.log(`Server Port: ${PORT}`));
     //Add data once only
     // await mongoose.connection.db.dropDatabase();
     // KPI.insertMany(kpis);
