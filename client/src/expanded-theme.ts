@@ -1,4 +1,5 @@
-// eslint-disable-next-line no-unused-vars
+// expaning theme setting
+// @ts-ignore
 import { Palette, PaletteColor } from "@mui/material/styles/createPalette";
 
 declare module "@mui/material/styles/createPalette" {
@@ -6,6 +7,7 @@ declare module "@mui/material/styles/createPalette" {
     [key: number]: string;
   }
 
+  // extending tertiary to have a PaletteColor as well
   interface Palette {
     tertiary: PaletteColor;
   }
