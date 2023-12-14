@@ -87,7 +87,7 @@ const Row1 = () => {
               <linearGradient id="colorRevenue" x1="0" y1="0" x2="0" y2="1">
                 <stop
                   offset="5%"
-                  stopColor={palette.primary[300]}
+                  stopColor={palette.primary[500]}
                   stopOpacity={0.5}
                 />
                 <stop
